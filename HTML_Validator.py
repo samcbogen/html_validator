@@ -55,6 +55,8 @@ def _extract_tags(html):
     ['<strong>', '</strong>']
     '''
     extract = []
+    if '>' not in html:
+        return extract
     for i in range(len(html)):
         if html[i] == '<':
             count = 0
