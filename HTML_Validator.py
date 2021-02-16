@@ -62,5 +62,5 @@ def _extract_tags(html):
             while html[b] != '>':
                 count += 1
                 b += 1
-            extract.append(html[i:b+1])
+            extract.append(html[i:b + 1])
     return extract
