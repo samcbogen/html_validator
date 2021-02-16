@@ -3,7 +3,7 @@
 
 def validate_html(html):
     '''
-    This function performs a limited 
+    This function performs a limited
     version of html validation by checking
     whether every opening tag has a corresponding closing tag.
     >>> validate_html('<strong>example</strong>')
@@ -41,6 +41,7 @@ def validate_html(html):
             else:
                 return False
     return len(stack) == 0
+
 
 def _extract_tags(html):
     '''
